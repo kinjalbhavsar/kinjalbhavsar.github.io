@@ -77,20 +77,20 @@
             <div class="skill-group">
               <h4>Core expertise</h4>
               <ul>
-                <li>Mobile software stack</li>
-                <li>Computer architecture</li>
-                <li>Operating systems</li>
-                <li>Real-time systems (RTOS)</li>
-                <li>Embedded systems</li>
+                <li>Jetpack XR &amp; Spatial Computing</li>
+                <li>ARCore / Augmented Reality</li>
+                <li>Kotlin &amp; Android platform</li>
+                <li>API design &amp; review</li>
+                <li>Jetpack Compose &amp; MVVM</li>
               </ul>
             </div>
             <div class="skill-group">
               <h4>Also fluent in</h4>
               <ul>
+                <li>Computer architecture &amp; OS</li>
+                <li>Embedded systems &amp; RTOS</li>
                 <li>Networking &amp; protocols</li>
                 <li>Parallel computing</li>
-                <li>Digital ASIC design</li>
-                <li>Memory systems</li>
                 <li>Performance engineering</li>
               </ul>
             </div>
@@ -133,20 +133,56 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Software Engineer</h3>
+                <h3 class="timeline-role">Software Engineer – Jetpack XR SceneCore</h3>
                 <div class="timeline-company">Google &middot; Mountain View, CA</div>
               </div>
-              <div class="timeline-period">Current</div>
+              <div class="timeline-period">2025 – Present</div>
             </div>
             <p class="timeline-desc">
-              Working on the mobile software stack at one of the world's largest technology companies.
-              Driving technical direction for complex, cross-functional initiatives that impact
-              millions of devices globally.
+              Core contributor to <strong>Jetpack XR SceneCore</strong>, Google's open-source spatial computing
+              library for Android XR — the foundation for building immersive 3D applications on
+              Android devices.
+            </p>
+            <ul class="timeline-bullets">
+              <li>Serve as <strong>API reviewer and Kotlin expert</strong> for the SceneCore library — reviewing 250+ CLs across the team, enforcing API council standards, Kotlin idioms, and library design consistency.</li>
+              <li>Designed and implemented the <strong>entity lifecycle management</strong> system — introduced <code>DisposedException</code>, <code>isDisposed</code>, automatic cleanup via <code>XrReferenceCleaner</code>, and a safe <code>Entity.dispose()</code> API, eliminating a class of resource-leak bugs in spatial apps.</li>
+              <li>Owned <strong>ActivitySpace spatial continuity</strong>: implemented gravity-aligned unscaled activity space, FSM-gated origin updates, yaw preservation, and worldspace scale overrides — ensuring stable, predictable XR session placement.</li>
+              <li>Expanded the public <strong>SceneCore API surface</strong>: unrestricted <code>InteractableComponent</code>, <code>InputEvent</code>, <code>GltfModelEntity</code>; exposed <code>Component.onAttach</code> / <code>onDetach</code>; shipped Kotlin Flow + lifecycle-aware listener extensions.</li>
+              <li>Led <strong>Java → Kotlin migration</strong> of the SceneCore runtime — converting 20+ core classes including <code>SpatialSceneRuntime</code>, <code>MovableComponentImpl</code>, <code>PanelEntityImpl</code>, <code>SpatialEnvironmentImpl</code>, and more.</li>
+              <li>Modernized the <strong>SceneCore test app</strong> to MVVM + Jetpack Compose, replacing all XML layouts and adding ViewModel infrastructure — improving test coverage and developer velocity.</li>
+              <li>Fixed concurrency and correctness bugs: race condition in <code>ActivitySpaceImpl</code> origin updates, zero-matrix guard in system space pose, <code>MovableComponent</code> size propagation for <code>SurfaceEntity</code>.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Jetpack XR</span>
+              <span class="tag">Android Spatial Computing</span>
+              <span class="tag">Kotlin</span>
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">MVVM</span>
+              <span class="tag">OpenXR</span>
+              <span class="tag">AOSP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer – ARCore</h3>
+                <div class="timeline-company">Google &middot; Mountain View, CA</div>
+              </div>
+              <div class="timeline-period">Prior</div>
+            </div>
+            <p class="timeline-desc">
+              Worked on <strong>ARCore</strong>, Google's augmented reality platform powering AR
+              experiences across hundreds of millions of Android devices worldwide.
             </p>
             <div class="timeline-tags">
-              <span class="tag">Mobile</span>
-              <span class="tag">Systems</span>
-              <span class="tag">Platform Engineering</span>
+              <span class="tag">ARCore</span>
+              <span class="tag">Augmented Reality</span>
+              <span class="tag">Android</span>
+              <span class="tag">Mobile Platform</span>
             </div>
           </div>
         </div>

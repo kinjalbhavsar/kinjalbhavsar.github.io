@@ -470,7 +470,43 @@ img { display: block; max-width: 100%; }
 .timeline-desc {
   font-size: .95rem;
   color: var(--text-muted);
+  margin-bottom: .75rem;
+}
+
+.timeline-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
   margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.timeline-bullets li {
+  font-size: .9rem;
+  color: var(--text-muted);
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.timeline-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: .75rem;
+  top: .18rem;
+}
+
+.timeline-bullets li strong { color: var(--text); font-weight: 600; }
+.timeline-bullets li code {
+  font-family: var(--mono);
+  font-size: .82rem;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  padding: .1rem .35rem;
+  border-radius: 3px;
 }
 
 .timeline-tags {
