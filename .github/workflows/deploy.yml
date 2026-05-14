@@ -1,0 +1,27 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Cloudflare Pages deployment
+        run: |
+          RESPONSE=$(curl -s -X POST \
+            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/pages/projects/kinjalbhavsar-website/deployments" \
+            -H "Authorization: Bearer ${{ secrets.CF_TOKEN }}" \
+            -H "Content-Type: application/json")
+          echo "$RESPONSE" | python3 -c "
+          import sys, json, re
+          d = json.loads(re.sub(r'[\x00-\x1f\x7f]', ' ', sys.stdin.read()))
+          if d.get('success'):
+              r = d['result']
+              print('Deployment triggered:', r['id'])
+              print('URL:', r.get('url', ''))
+          else:
+              print('Error:', d.get('errors'))
+              exit(1)
+          "
