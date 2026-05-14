@@ -49,23 +49,20 @@ revealTargets.forEach(el => observer.observe(el));
 const sections = document.querySelectorAll('section[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
-const sectionObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navAnchors.forEach(a => {
-          a.style.color = '';
-          if (a.getAttribute('href') === '#' + entry.target.id) {
-            a.style.color = 'var(--accent)';
-          }
-        });
-      }
-    });
-  },
-  { threshold: 0.4 }
-);
+function updateActiveNav() {
+  const scrollMid = window.scrollY + window.innerHeight * 0.35;
+  let current = sections[0].id;
+  sections.forEach(s => {
+    if (s.offsetTop <= scrollMid) current = s.id;
+  });
+  navAnchors.forEach(a => {
+    const active = a.getAttribute('href') === '#' + current;
+    a.style.color = active ? 'var(--accent)' : '';
+  });
+}
 
-sections.forEach(s => sectionObserver.observe(s));
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
 
 /* ============================================================
    GLITCH_HUNTER mini-game
