@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Kinjal Bhavsar</title>
+  <meta name="description" content="Kinjal Bhavsar — software engineer with 17+ years across AR/XR, camera systems, Linux kernel, and embedded platforms at Google, Samsung, Pelican Imaging, Qualcomm, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div data-nav></div>
+
+  <main>
+    <section class="section section-pad-top">
+      <div class="container">
+        <div class="section-label">resume</div>
+        <h1 class="section-title">Where I've worked</h1>
+        <p class="section-lede">
+          17+ years of engineering — from bare-metal embedded firmware to AR/XR platform SDKs.
+          Roles in reverse chronological order.
+        </p>
+
+        <div class="timeline">
+
+          <!-- Google – SceneCore -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Engineer — Jetpack XR SceneCore</h3>
+                  <div class="timeline-company">Google &middot; Mountain View, CA</div>
+                </div>
+                <div class="timeline-period">2023 – Present</div>
+              </div>
+              <p class="timeline-desc">
+                Bootstrapped and delivered <strong>SceneCore</strong>, the inaugural developer SDK
+                for Android XR as part of Jetpack XR — the foundation for building immersive 3D
+                applications on Android devices.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Designed and launched <strong>robust input handling mechanisms</strong> and an <strong>Entity Component System (ECS)</strong> in SceneCore, enabling expressive spatial app development for Android XR.</li>
+                <li>Serve as <strong>API reviewer and Kotlin expert</strong> for the SceneCore library — reviewing 250+ CLs, enforcing API council standards, Kotlin idioms, and library design consistency.</li>
+                <li>Designed and implemented the <strong>entity lifecycle management</strong> system — <code>DisposedException</code>, <code>isDisposed</code>, automatic cleanup via <code>XrReferenceCleaner</code>, eliminating resource-leak bugs in spatial apps.</li>
+                <li>Owned <strong>ActivitySpace spatial continuity</strong>: gravity-aligned unscaled activity space, FSM-gated origin updates, yaw preservation, and worldspace scale overrides.</li>
+                <li>Expanded the public <strong>SceneCore API surface</strong>: unrestricted <code>InteractableComponent</code>, <code>InputEvent</code>, <code>GltfModelEntity</code>; shipped Kotlin Flow + lifecycle-aware listener extensions.</li>
+                <li>Led <strong>Java → Kotlin migration</strong> of the SceneCore runtime — converting 20+ core classes including <code>SpatialSceneRuntime</code>, <code>MovableComponentImpl</code>, <code>SpatialEnvironmentImpl</code>, and more.</li>
+                <li>Modernized the <strong>SceneCore test app</strong> to MVVM + Jetpack Compose, replacing all XML layouts and adding ViewModel infrastructure.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Jetpack XR</span><span class="tag">Android XR</span><span class="tag">Kotlin</span>
+                <span class="tag">ECS</span><span class="tag">Jetpack Compose</span><span class="tag">MVVM</span><span class="tag">AOSP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google – ARCore -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Engineer — ARCore</h3>
+                  <div class="timeline-company">Google &middot; Mountain View, CA</div>
+                </div>
+                <div class="timeline-period">Aug 2019 – 2023</div>
+              </div>
+              <p class="timeline-desc">
+                Worked on <strong>ARCore</strong>, Google's augmented reality platform powering AR
+                experiences across billions of Android devices worldwide.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Led targeted <strong>power optimizations</strong> in ARCore's camera pipeline — critically enabling the launch and viability of <strong>Project Guideline</strong>, Google's AR navigation app for people with low vision.</li>
+                <li>Spearheaded a cross-functional team to design and launch <strong>Electronic Image Stabilization (EIS)</strong> for ARCore — gyroscope-driven stabilization correcting rolling shutter and camera shake in real time across Android SDK and NDK. <a href="https://developers.google.com/ar/develop/electronic-image-stabilization" target="_blank" rel="noopener" class="timeline-link">docs &rarr;</a></li>
+                <li>Re-architected and re-implemented the <strong>ARCore camera data pipeline</strong>, improving device compatibility and enabling new camera features including a Kotlin-based camera stack.</li>
+                <li>Designed and deployed a <strong>comprehensive analytics framework</strong> to gather and analyze ARCore camera performance data across an install base of over <strong>2 billion devices</strong>.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">ARCore</span><span class="tag">Augmented Reality</span><span class="tag">Camera HAL</span>
+                <span class="tag">Kotlin</span><span class="tag">C++</span><span class="tag">EIS</span><span class="tag">Android NDK</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Samsung -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Staff Engineer</h3>
+                  <div class="timeline-company">Samsung Research America &middot; Mountain View, CA</div>
+                </div>
+                <div class="timeline-period">Feb 2017 – Aug 2019</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Developed a <strong>framework enabling non-VR Android applications</strong> to launch and operate within the GearVR environment, extending the GearVR content ecosystem.</li>
+                <li>Designed and prototyped novel <strong>AR experiences</strong> for internal evaluation and future product consideration.</li>
+                <li>Implemented <strong>CameraX extensions</strong> for Samsung devices, providing third-party developers access to advanced camera features (HDR, Night Mode) on Samsung Galaxy hardware.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">GearVR</span><span class="tag">Android</span><span class="tag">CameraX</span>
+                <span class="tag">Java</span><span class="tag">Kotlin</span><span class="tag">Unity / C#</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- mPerpetuo -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Technical Leader</h3>
+                  <div class="timeline-company">mPerpetuo Inc. &middot; San Jose, CA</div>
+                </div>
+                <div class="timeline-period">Apr 2015 – Feb 2017</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Hired and mentored a platform software team; led successful <strong>porting of the Qualcomm camera stack to a Xenomai real-time kernel</strong> and associated RT libraries.</li>
+                <li>Directed development of custom drivers for <strong>large 1-inch, 16-bit HD image sensors</strong> integrated with Qualcomm SoCs.</li>
+                <li>Drove real-time implementation of <strong>3A algorithms</strong> (Auto-Exposure, Auto-White Balance, Auto-Focus) and significant camera data path optimization — delivering substantially reduced photon-to-display latency.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Xenomai RTOS</span><span class="tag">C / C++</span><span class="tag">Qualcomm Snapdragon</span>
+                <span class="tag">Camera ISP</span><span class="tag">Linux Kernel</span><span class="tag">3A Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pelican Imaging -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Engineer</h3>
+                  <div class="timeline-company">Pelican Imaging Inc. &middot; Mountain View, CA</div>
+                </div>
+                <div class="timeline-period">Nov 2012 – Apr 2015</div>
+              </div>
+              <p class="timeline-desc">
+                Contributed to the world's first array camera for consumer mobile devices, enabling
+                post-capture refocus and depth sensing.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Defined the <strong>architecture of the camera software stack</strong> from drivers to APIs, ensuring system cohesion and efficiency.</li>
+                <li>Developed a critical <strong>array sensor driver</strong> for capturing high-quality raw image data across MIPI CSI-2 interfaces.</li>
+                <li><strong>Expanded the Android camera framework</strong> to export depth data, unlocking new developer capabilities; optimized ISP pipeline performance.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Camera HAL</span><span class="tag">Android Framework</span><span class="tag">C / C++</span>
+                <span class="tag">MIPI CSI-2</span><span class="tag">ISP</span><span class="tag">Linux Kernel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualcomm -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Senior Engineer</h3>
+                  <div class="timeline-company">Qualcomm Innovation Center &middot; San Jose, CA</div>
+                </div>
+                <div class="timeline-period">Jan 2010 – Nov 2012</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Delivered significant optimizations to the <strong>Android display stack</strong> (SurfaceFlinger, Hardware Composer) for Snapdragon chipsets.</li>
+                <li>Ported and optimized the <strong>Android bootloader (LK)</strong> for enhanced boot performance and stability on new Snapdragon platforms.</li>
+                <li>Profiled <strong>Adreno graphics driver</strong> performance and provided OEM partner support, enabling successful device launches.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Android Display Stack</span><span class="tag">C / C++</span><span class="tag">Snapdragon SoC</span>
+                <span class="tag">ARM Assembly</span><span class="tag">Adreno GPU</span><span class="tag">Bootloader</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vavni -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Engineer</h3>
+                  <div class="timeline-company">Vavni Inc. &middot; Hsinchu, Taiwan</div>
+                </div>
+                <div class="timeline-period">Dec 2007 – Jul 2008</div>
+              </div>
+              <p class="timeline-desc">
+                Board bring-up and BSP development for a Qualcomm MSM7x50-based platform —
+                Linux kernel initialization, display (framebuffer) and input (touchscreen) drivers for AOSP.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Embedded Linux</span><span class="tag">BSP</span><span class="tag">C</span>
+                <span class="tag">Device Drivers</span><span class="tag">Qualcomm MSM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- eInfochips -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Embedded Software Engineer</h3>
+                  <div class="timeline-company">eInfochips Limited &middot; Ahmedabad, India</div>
+                </div>
+                <div class="timeline-period">May 2006 – Dec 2007</div>
+              </div>
+              <p class="timeline-desc">
+                Developed a framework and device drivers for real-time audio/video transcoding on
+                TI DaVinci and DSP platforms, enabling efficient real-time media processing.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">C</span><span class="tag">TI DaVinci</span><span class="tag">DSP</span>
+                <span class="tag">Real-Time Systems</span><span class="tag">A/V Transcoding</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education NCSU -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Graduate Studies — Computer Engineering</h3>
+                  <div class="timeline-company">North Carolina State University</div>
+                </div>
+                <div class="timeline-period">2008 – 2009</div>
+              </div>
+              <p class="timeline-desc">
+                Advanced computer systems: microprocessor architecture, OS design, embedded systems,
+                RTOS, networking and internet protocols, parallel computing, digital ASIC design,
+                and memory systems.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Computer Architecture</span><span class="tag">OS</span><span class="tag">RTOS</span>
+                <span class="tag">Embedded Systems</span><span class="tag">Networking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education BE -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">B.E., Electronics &amp; Communication Engineering</h3>
+                  <div class="timeline-company">Dharmsinh Desai University &middot; Nadiad, Gujarat, India</div>
+                </div>
+                <div class="timeline-period">2002 – 2006</div>
+              </div>
+              <p class="timeline-desc">
+                Bachelor of Engineering in Electronics &amp; Communication Engineering from one of
+                Gujarat's premier technical universities, formerly known as D.D. Institute of Technology.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Electronics</span><span class="tag">Communication Engineering</span><span class="tag">Gujarat, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volunteer -->
+          <div class="timeline-item">
+            <div class="timeline-dot timeline-dot-outline"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Volunteer Mentor</h3>
+                  <div class="timeline-company">We Teach Science Foundation</div>
+                </div>
+                <div class="timeline-period">Sep 2012 – Jun 2013</div>
+              </div>
+              <p class="timeline-desc">
+                Mentored middle school students in mathematics, helping build confidence and
+                foundational skills in STEM subjects.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">STEM Education</span><span class="tag">Mentorship</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/layout.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
