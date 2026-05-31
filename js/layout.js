@@ -5,10 +5,9 @@
    ============================================================ */
 (function () {
   const NAV_LINKS = [
-    { href: '/',              label: 'Bio',      match: ['/', '/index.html'] },
-    { href: '/resume.html',   label: 'Resume',   match: ['/resume.html'] },
-    { href: '/projects.html', label: 'Projects', match: ['/projects.html'] },
-    { href: '/writing.html',  label: 'Writing',  match: ['/writing.html'] },
+    { href: '/',              label: 'Story',   match: ['/', '/index.html'] },
+    { href: '/resume.html',   label: 'Resume',  match: ['/resume.html'] },
+    { href: '/writing.html',  label: 'Writing', match: ['/writing.html'] },
   ];
 
   function currentPath() {
@@ -54,9 +53,9 @@
     slot.outerHTML = `
       <footer class="footer">
         <div class="footer-inner">
-          <span>Kinjal Bhavsar &copy; 2026</span>
+          <span>Kinjal Bhavsar &copy; 2026 &middot; made in the Bay Area</span>
           <a class="footer-hint" id="footer-hint" href="/" data-glitch-trigger title="something's hiding...">&#128065;&#65039;</a>
-          <span>Built with &hearts; and plain HTML</span>
+          <span>Handwritten in plain HTML, with &hearts;</span>
         </div>
       </footer>`;
   }

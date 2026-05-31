@@ -6,7 +6,7 @@
 /* ---------- Reveal on scroll (every page) ---------- */
 (function initReveal() {
   const targets = document.querySelectorAll(
-    '.timeline-content, .project-card, .bento-card, .writing-placeholder'
+    '.timeline-content, .note-card, .photo, .project-card, .writing-placeholder'
   );
   if (targets.length === 0) return;
   targets.forEach(el => el.classList.add('reveal'));

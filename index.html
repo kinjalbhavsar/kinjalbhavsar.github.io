@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kinjal Bhavsar — Software Engineer building spatial computing</title>
-  <meta name="description" content="Kinjal Bhavsar — software engineer at Google building Android XR. Bay Area. 17+ years across AR/XR, camera systems, Linux kernel, and embedded platforms." />
+  <title>Kinjal Bhavsar — a small corner of the internet</title>
+  <meta name="description" content="Kinjal Bhavsar — engineer, tinkerer, and mentor. From Nadiad to the Bay Area, building spatial computing at Google by day and robots with the kids he coaches on weekends. My story, in a few chapters." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body data-bio>
@@ -16,211 +16,274 @@
 
   <main>
 
-    <!-- HERO -->
+    <!-- ============================= HERO ============================= -->
     <section class="hero" id="hero">
       <div class="hero-inner">
-        <p class="hero-eyebrow"><span class="hero-star">✦</span> <span id="greeting">hello</span></p>
-        <h1 class="hero-name">Kinjal Bhavsar<span class="hero-mark">✦</span></h1>
+        <p class="hero-eyebrow"><span class="hero-star">✦</span> <span id="greeting">hello</span>, glad you're here</p>
+        <h1 class="hero-name">Hi, I'm<br/><span class="accent">Kinjal</span>.<span class="hero-mark">✦</span></h1>
         <p class="hero-title">
-          Software engineer building <span class="accent">spatial computing</span> at Google.
-          17+ years shipping AR/XR, camera systems, Linux kernels, and embedded platforms
-          to <span class="accent-2">billions of devices</span>.
+          Engineer, tinkerer, and mentor. I build <span class="accent">spatial computing</span> at Google —
+          and on weekends I build <span class="accent-2">robots with kids</span>.
+          This is the longer story.
+          <!-- TODO: if you'd like "dad" in here, this hero line is the place to add it — left it as "mentor" since that's what the resume supports. -->
         </p>
         <div class="hero-cta">
-          <a href="#bento" class="btn btn-primary">More about me ↓</a>
-          <a href="/resume.html" class="btn btn-outline">See resume</a>
+          <a href="#roots" class="btn btn-primary">Read my story ↓</a>
+          <a href="/resume.html" class="btn btn-outline">The short, work version</a>
         </div>
       </div>
-      <svg class="hero-constellation" viewBox="0 0 400 280" aria-hidden="true">
-        <defs>
-          <linearGradient id="cgrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55"/>
-            <stop offset="55%" stop-color="#a78bfa" stop-opacity="0.6"/>
-            <stop offset="100%" stop-color="#e9c46a" stop-opacity="0.7"/>
-          </linearGradient>
-          <radialGradient id="starGold">
-            <stop offset="0%" stop-color="#e9c46a"/>
-            <stop offset="100%" stop-color="#e9c46a" stop-opacity="0"/>
-          </radialGradient>
-          <radialGradient id="starCyan">
-            <stop offset="0%" stop-color="#38bdf8"/>
-            <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <!-- arc -->
-        <path d="M 30,240 Q 140,200 220,130 T 380,40"
-              stroke="url(#cgrad)" stroke-width="1" stroke-dasharray="2 6" fill="none"/>
-        <!-- glow halos -->
-        <circle cx="30" cy="240" r="18" fill="url(#starCyan)" opacity="0.55"/>
-        <circle cx="140" cy="195" r="14" fill="url(#starCyan)" opacity="0.45"/>
-        <circle cx="245" cy="120" r="16" fill="url(#starCyan)" opacity="0.5"/>
-        <circle cx="380" cy="40"  r="26" fill="url(#starGold)" opacity="0.85"/>
-        <!-- star marks -->
-        <g fill="#38bdf8">
-          <circle cx="30"  cy="240" r="2"/>
-          <circle cx="140" cy="195" r="1.6"/>
-          <circle cx="245" cy="120" r="1.8"/>
-        </g>
-        <text x="380" y="46" text-anchor="middle" fill="#e9c46a" font-family="Inter, sans-serif" font-size="14" font-weight="300">✦</text>
-        <!-- a couple scatter stars for richness -->
-        <g fill="#a78bfa" opacity="0.5">
-          <circle cx="90"  cy="60"  r="1"/>
-          <circle cx="320" cy="180" r="1"/>
-          <circle cx="190" cy="40"  r="0.9"/>
-        </g>
-      </svg>
+      <figure class="hero-portrait">
+        <img src="assets/kinjal.jpg" alt="Kinjal Bhavsar" />
+        <figcaption class="portrait-tag">📍 SF Bay Area · UTC−8</figcaption>
+      </figure>
     </section>
 
-    <!-- BENTO GRID -->
-    <section class="bento" id="bento" aria-label="About Kinjal">
+    <div class="story">
 
-      <!-- NOW -->
-      <article class="bento-card card-now col-2">
-        <span class="bento-label"><span class="dot dot-live"></span> now</span>
-        <div class="now-row">
-          <div class="now-avatar"><img src="assets/kinjal.jpg" alt="Kinjal Bhavsar" /></div>
-          <div>
-            <div class="bento-headline">Building <span class="accent">Android XR</span></div>
-            <div class="bento-sub">Software engineer at <strong>Google</strong> on Jetpack XR SceneCore — the developer SDK for spatial apps.</div>
+      <!-- ====================== 01 · ROOTS ====================== -->
+      <section class="chapter" id="roots">
+        <div class="chapter-head">
+          <span class="chapter-num">01</span>
+          <h2 class="chapter-title">Where it <span class="accent">began</span></h2>
+        </div>
+
+        <div class="chapter-split">
+          <div class="prose">
+            <p>
+              I grew up in <strong>Nadiad</strong>, a small city in Gujarat, India — the kind of place where
+              curiosity about how things worked usually meant taking them apart and hoping to get them back together.
+            </p>
+            <p>
+              That curiosity turned into a career that kept pulling me across the map: from Gujarat to a chip-design
+              town in Taiwan, to grad school in North Carolina, and finally to the hills of the Bay Area, where I've
+              been ever since. <!-- TODO: confirm/replace these journey details with the real story -->
+            </p>
+            <p>
+              Three continents, a lot of late-night debugging, and one constant — I still get a kick out of figuring
+              out how things work.
+            </p>
           </div>
+          <figure class="photo chapter-media photo-ph" aria-label="Photo placeholder">
+            <span class="ph-icon">🏡</span>
+            <span class="ph-note">[ drop a photo here — home, family, or a younger you in Nadiad ]</span>
+          </figure>
         </div>
-      </article>
 
-      <!-- HERE -->
-      <article class="bento-card card-here">
-        <span class="bento-label">here</span>
-        <div class="here-pin">📍</div>
-        <div class="bento-headline" style="font-size:1.15rem;">SF Bay Area</div>
-        <div class="bento-sub" style="font-size:.85rem;">Mountain View, CA</div>
-        <div class="here-meta">UTC&minus;8 · sunny most days</div>
-      </article>
-
-      <!-- FIND ME -->
-      <article class="bento-card">
-        <span class="bento-label">find me</span>
-        <div class="bento-sub" style="font-size:.9rem;">Open to good conversations.</div>
-        <div class="find-me-row">
-          <a class="find-link" href="https://www.linkedin.com/in/kinjalb" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a class="find-link" href="https://github.com/kinjalbhavsar" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-          <a class="find-link" href="mailto:kinjal.bhavsr@gmail.com" aria-label="Email">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
-        </div>
-      </article>
-
-      <!-- JOURNEY -->
-      <!-- TODO: correct or expand these stops if the journey doesn't match -->
-      <article class="bento-card card-journey col-4">
-        <span class="bento-label">journey · where i've been</span>
-        <div class="bento-headline" style="font-size:1.1rem;">From Gujarat to spatial computing.</div>
+        <!-- TODO: correct these stops/years if the journey doesn't match -->
         <div class="journey-track">
-          <div class="journey-stop">
-            <span class="pin">✦</span>
-            <span class="city">Nadiad</span>
-            <span class="year">2002 · 🇮🇳</span>
-          </div>
-          <div class="journey-stop">
-            <span class="pin">✦</span>
-            <span class="city">Hsinchu</span>
-            <span class="year">2007 · 🇹🇼</span>
-          </div>
-          <div class="journey-stop">
-            <span class="pin">✦</span>
-            <span class="city">Raleigh, NC</span>
-            <span class="year">2008 · 🇺🇸</span>
-          </div>
-          <div class="journey-stop">
-            <span class="pin">✦</span>
-            <span class="city">SF Bay Area</span>
-            <span class="year">2010 · now</span>
+          <div class="journey-stop"><span class="pin">✦</span><span class="city">Nadiad</span><span class="year">2002 · 🇮🇳</span></div>
+          <div class="journey-stop"><span class="pin">✦</span><span class="city">Hsinchu</span><span class="year">2007 · 🇹🇼</span></div>
+          <div class="journey-stop"><span class="pin">✦</span><span class="city">Raleigh, NC</span><span class="year">2008 · 🇺🇸</span></div>
+          <div class="journey-stop"><span class="pin">✦</span><span class="city">SF Bay Area</span><span class="year">2010 · now</span></div>
+        </div>
+      </section>
+
+      <!-- ====================== 02 · THE WORK ====================== -->
+      <section class="chapter" id="work">
+        <div class="chapter-head">
+          <span class="chapter-num">02</span>
+          <h2 class="chapter-title">What I build <span class="accent">now</span></h2>
+        </div>
+
+        <div class="chapter-split flip">
+          <figure class="photo chapter-media photo-ph" aria-label="Photo placeholder">
+            <span class="ph-icon">🥽</span>
+            <span class="ph-note">[ optional: a workspace, headset, or "at the office" photo ]</span>
+          </figure>
+          <div class="prose">
+            <p>
+              These days I'm a software engineer at <strong>Google</strong>, working on <strong>Android XR</strong> —
+              specifically <strong>Jetpack XR SceneCore</strong>, the developer SDK people use to build spatial,
+              3D apps.
+            </p>
+            <p>
+              Before that I spent years on <strong>ARCore</strong>, and before <em>that</em> on camera systems, Linux
+              kernels, and the kind of embedded firmware that quietly runs underneath everything. Somewhere along the
+              way, code I worked on ended up running on <strong>2+ billion devices</strong> — still a strange and
+              wonderful thing to type out.
+            </p>
+            <p>
+              The work lives in two places, if you want the receipts:
+            </p>
           </div>
         </div>
-      </article>
 
-      <!-- WHAT I LOVE -->
-      <article class="bento-card col-2">
-        <span class="bento-label">what i love</span>
-        <div class="bento-headline" style="font-size:1.1rem;">Outside the editor.</div>
-        <!-- TODO: swap these for your real hobbies -->
+        <div class="link-cluster">
+          <a class="link-pill is-work" href="https://www.linkedin.com/in/kinjalb" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a class="link-pill is-work" href="https://github.com/kinjalbhavsar" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="link-pill is-work" href="/resume.html">📄 Full resume</a>
+        </div>
+      </section>
+
+      <!-- ====================== 03 · TINKERING ====================== -->
+      <section class="chapter" id="tinkering">
+        <div class="chapter-head">
+          <span class="chapter-num">03</span>
+          <h2 class="chapter-title">Things I <span class="accent">make</span> on the side</h2>
+        </div>
+
+        <p class="prose">
+          The job pays the bills, but the tinkering keeps me honest. My favorite recent project isn't shipped to
+          billions of anyone — it's coaching a <strong>FIRST Lego League</strong> team through the <em>Submerged</em>
+          season, building and programming Lego Mindstorms robots with the next generation of engineers.
+        </p>
+
+        <blockquote class="pull">
+          "The best part of building for billions is teaching one kid that they can build, too."
+          <!-- TODO: swap for a real line you'd actually say, or remove -->
+        </blockquote>
+
+        <div class="cards-2">
+          <div class="note-card">
+            <span class="note-label">tinkering with</span>
+            <p class="prose" style="font-size:1rem;">
+              FLL <em>Submerged</em> — Lego Mindstorms, robotics, and a lot of "okay, why did it turn left there?"
+            </p>
+            <div class="link-cluster" style="margin-top:1rem;">
+              <a class="link-pill is-work" href="https://github.com/kinjalbhavsar" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Code on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="note-card">
+            <span class="note-label">also poking at</span>
+            <!-- TODO: replace with a real side project / experiment, or delete this card -->
+            <p class="prose todo" style="font-size:1rem; color:var(--text-dim); font-style:italic;">
+              [ a side project or experiment you're proud of — what is it, and why? ]
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== 04 · LIFE ====================== -->
+      <section class="chapter" id="life">
+        <div class="chapter-head">
+          <span class="chapter-num">04</span>
+          <h2 class="chapter-title">Life beyond the <span class="accent">editor</span></h2>
+        </div>
+
+        <p class="prose">
+          I'm a weekend hiker, a robotics coach, and a reformed "I'll just fix this one bug before dinner" optimist.
+          <!-- TODO: this is the natural spot to introduce family / personal life — partner, kids, whatever you'd like to share. Left it out for now since the resume didn't mention it; add as much or as little as you're comfortable with. -->
+          When I'm away from a keyboard, you'll usually find me outside, mentoring, or building something that didn't strictly need building.
+        </p>
+
+        <!-- TODO: swap these for your real loves -->
         <div class="love-chips">
-          <span class="chip">games</span>
-          <span class="chip chip-2">hiking</span>
+          <span class="chip">hiking</span>
+          <span class="chip chip-2">games</span>
           <span class="chip chip-warm">building things</span>
-          <span class="chip">mentoring</span>
-          <span class="chip chip-2">[TODO: +1 more]</span>
+          <span class="chip">mentoring kids</span>
+          <span class="chip chip-2">travel</span>
+          <span class="chip chip-warm">[ + one more you love ]</span>
         </div>
-      </article>
 
-      <!-- CURRENTLY -->
-      <article class="bento-card col-2">
-        <span class="bento-label"><span class="dot dot-live"></span> currently</span>
-        <div class="currently-list">
-          <div class="currently-row">
-            <span class="k">reading</span>
-            <!-- TODO: replace with current book -->
-            <span class="v todo">[your current book]</span>
+        <div class="photo-strip" style="margin-top:2rem;">
+          <figure class="photo photo-ph" aria-label="Photo placeholder">
+            <span class="ph-icon">📷</span>
+            <span class="ph-note">[ a favorite travel / outdoors shot ]</span>
+          </figure>
+          <figure class="photo photo-ph" aria-label="Photo placeholder">
+            <span class="ph-icon">👨‍👩‍👧</span>
+            <span class="ph-note">[ family / weekend life, as much as you want to share ]</span>
+          </figure>
+        </div>
+
+        <div class="cards-2" style="margin-top:2rem;">
+          <div class="note-card">
+            <span class="note-label"><span class="dot dot-live"></span> currently</span>
+            <div class="currently-list">
+              <!-- TODO: fill these in; they're a nice, low-effort way to keep the page alive -->
+              <div class="currently-row"><span class="k">reading</span><span class="v todo">[ your current book ]</span></div>
+              <div class="currently-row"><span class="k">learning</span><span class="v todo">[ a topic / framework ]</span></div>
+              <div class="currently-row"><span class="k">playing</span><span class="v todo">[ current game or show ]</span></div>
+              <div class="currently-row"><span class="k">tinkering</span><span class="v">FLL Submerged with the next gen of engineers</span></div>
+            </div>
           </div>
-          <div class="currently-row">
-            <span class="k">learning</span>
-            <!-- TODO: replace with topic you're exploring -->
-            <span class="v todo">[topic / framework]</span>
-          </div>
-          <div class="currently-row">
-            <span class="k">playing</span>
-            <!-- TODO: replace with current game/show -->
-            <span class="v todo">[current game or show]</span>
-          </div>
-          <div class="currently-row">
-            <span class="k">tinkering</span>
-            <span class="v">FLL Submerged with the next gen of engineers</span>
+          <div class="note-card">
+            <span class="note-label">a few fun facts</span>
+            <!-- TODO: swap for true, surprising tidbits -->
+            <ul class="facts-list">
+              <li>Have <strong>lived on 3 continents</strong> — India, Taiwan, USA.</li>
+              <li>Code I shipped <strong>runs on 2+ billion devices</strong>.</li>
+              <li>Went from mentoring kids in <strong>math</strong> to building <strong>robots</strong> with them.</li>
+            </ul>
           </div>
         </div>
-      </article>
 
-      <!-- FUN FACTS -->
-      <article class="bento-card col-2">
-        <span class="bento-label">fun facts</span>
-        <!-- TODO: swap these placeholders for true, surprising tidbits about you -->
-        <ul class="facts-list">
-          <li>Have <strong>lived on 3 continents</strong> — India, Taiwan, USA.</li>
-          <li>Code I shipped <strong>runs on 2+ billion devices</strong>.</li>
-          <li>Mentored middle schoolers in math before switching to building robots with kids.</li>
-        </ul>
-      </article>
-
-      <!-- EXPERTISE -->
-      <article class="bento-card col-2">
-        <span class="bento-label">expertise</span>
-        <div class="bento-headline" style="font-size:1.1rem;">Where I'm dangerous.</div>
-        <div class="bento-sub" style="font-size:.9rem;">17+ years across the systems stack — bare-metal to platform SDKs.</div>
-        <div class="expertise-tags">
-          <span class="tag">AR / XR</span>
-          <span class="tag">Camera &amp; ISP</span>
-          <span class="tag">Linux Kernel</span>
-          <span class="tag">RTOS</span>
-          <span class="tag">Android Frameworks</span>
-          <span class="tag">Kotlin · C++</span>
-          <span class="tag">Embedded</span>
-          <span class="tag">Performance</span>
+        <p class="prose" style="margin-top:2rem; font-size:1rem;">
+          The unfiltered, off-the-clock version of all this lives over here:
+        </p>
+        <div class="link-cluster">
+          <!-- TODO: replace each href="#" with your real profile/album URL -->
+          <a class="link-pill is-warm" href="#" target="_blank" rel="noopener" aria-label="Google Photos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            Google Photos <span class="pill-todo">add link</span>
+          </a>
+          <a class="link-pill is-social" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Instagram <span class="pill-todo">add link</span>
+          </a>
+          <a class="link-pill is-social" href="#" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook <span class="pill-todo">add link</span>
+          </a>
+          <a class="link-pill is-social" href="#" target="_blank" rel="noopener" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter / X <span class="pill-todo">add link</span>
+          </a>
         </div>
-      </article>
+      </section>
 
-    </section>
+      <!-- ====================== 05 · SAY HELLO ====================== -->
+      <section class="chapter" id="hello">
+        <div class="chapter-head">
+          <span class="chapter-num">05</span>
+          <h2 class="chapter-title">Say <span class="accent">hello</span></h2>
+        </div>
+
+        <p class="prose">
+          That's the story so far. I love a good conversation — about spatial computing, coaching tiny engineers,
+          the best trail near Mountain View, or anything in between. The fastest way to reach me is
+          <a class="inline-link" href="mailto:kinjal.bhavsr@gmail.com">email</a>; I also keep a few
+          <a class="inline-link" href="/writing.html">notes and writing</a> here.
+        </p>
+
+        <div class="link-cluster">
+          <a class="link-pill is-work" href="mailto:kinjal.bhavsr@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email me
+          </a>
+          <a class="link-pill is-work" href="https://www.linkedin.com/in/kinjalb" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a class="link-pill is-work" href="https://github.com/kinjalbhavsar" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </section>
+
+    </div>
 
   </main>
 
   <div data-footer></div>
 
-  <!-- GLITCH_HUNTER easter egg modal -->
+  <!-- GLITCH_HUNTER easter egg modal (hidden bit of fun — click the eye in the footer) -->
   <dialog class="game-dialog" id="game-dialog" aria-label="Glitch Hunter mini-game">
     <div class="game-shell">
       <div class="game-bar">
         <span class="game-bar-dots"><span></span><span></span><span></span></span>
-        <span class="game-bar-title">GLITCH_HUNTER.exe</span>
+        <span class="game-bar-title">glitch_hunter</span>
         <button class="game-close" id="game-close" aria-label="Close game">[ esc ]</button>
       </div>
       <div class="game-hud">
@@ -231,8 +294,8 @@
       <div class="game-area" id="game-area">
         <div class="game-start-overlay" id="game-overlay">
           <div class="game-start-box">
-            <div class="game-title-ascii">GLITCH_HUNTER</div>
-            <p>Click glitches to eliminate them.<br/>30 seconds. How good are you?</p>
+            <div class="game-title-ascii">Glitch Hunter</div>
+            <p>You found the secret. Click the glitches to squash them.<br/>30 seconds. How good are you?</p>
             <button class="btn btn-primary" id="game-start-btn">Start Game</button>
           </div>
         </div>
