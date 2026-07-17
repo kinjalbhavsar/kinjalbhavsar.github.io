@@ -25,13 +25,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=20260717b" />
 </head>
 <body>
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div data-nav></div>
 
-  <main>
+  <main id="main-content">
     <section class="section section-pad-top">
       <div class="container">
         <div class="section-label">resume</div>
@@ -40,6 +42,32 @@
           17+ years of engineering — from bare-metal embedded firmware to AR/XR platform SDKs.
           Roles in reverse chronological order.
         </p>
+
+        <div class="resume-actions" aria-label="Resume actions">
+          <button class="btn btn-primary" type="button" data-print-resume>Print / save PDF</button>
+          <a class="btn btn-outline" href="mailto:kinjal.bhavsr@gmail.com">Email me</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/kinjalb" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+
+        <section class="resume-summary" aria-labelledby="expertise-title">
+          <div>
+            <span class="section-label">at a glance</span>
+            <h2 class="summary-title" id="expertise-title">Platform engineer for spatial and camera systems</h2>
+          </div>
+          <div class="expertise-tags" aria-label="Areas of expertise">
+            <span class="chip">Android XR</span>
+            <span class="chip chip-2">Jetpack &amp; Kotlin APIs</span>
+            <span class="chip chip-warm">Camera pipelines</span>
+            <span class="chip">Embedded Linux</span>
+            <span class="chip chip-2">C / C++</span>
+            <span class="chip chip-warm">Technical leadership</span>
+          </div>
+          <div class="proof-links">
+            <a class="inline-link" href="https://developer.android.com/jetpack/androidx/releases/xr-scenecore" target="_blank" rel="noopener">SceneCore docs ↗</a>
+            <a class="inline-link" href="https://developers.google.com/ar/develop/electronic-image-stabilization" target="_blank" rel="noopener">ARCore EIS docs ↗</a>
+            <a class="inline-link" href="https://blog.google/company-news/outreach-and-initiatives/accessibility/project-guideline-helping-blind-people-run-independently/" target="_blank" rel="noopener">Project Guideline ↗</a>
+          </div>
+        </section>
 
         <div class="timeline">
 
@@ -315,7 +343,7 @@
 
   <div data-footer></div>
 
-  <script src="js/layout.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/layout.js?v=20260717b" defer></script>
+  <script src="js/main.js?v=20260717b" defer></script>
 </body>
 </html>

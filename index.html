@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=20260717b" />
 
   <script type="application/ld+json">
   {
@@ -53,9 +53,11 @@
 </head>
 <body data-bio>
 
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
   <div data-nav></div>
 
-  <main>
+  <main id="main-content">
 
     <!-- ============================= HERO ============================= -->
     <section class="hero" id="hero">
@@ -74,7 +76,7 @@
       </div>
       <figure class="hero-portrait">
         <img src="assets/kinjal.jpg" alt="Portrait of Kinjal Bhavsar" width="600" height="600" fetchpriority="high" decoding="async" />
-        <figcaption class="portrait-tag">📍 SF Bay Area, California · UTC−8</figcaption>
+        <figcaption class="portrait-tag">📍 SF Bay Area, California · Pacific Time</figcaption>
       </figure>
     </section>
 
@@ -98,9 +100,27 @@
             you took it, a nine-person startup putting Android on a <strong>real-time kernel</strong> for
             professional cameras, and Samsung's <strong>AR/VR lab</strong>. In 2019 it reached Google, where I
             spent four years on <strong>ARCore</strong> — including the camera work behind
-            <strong>Project Guideline</strong>, which helps people with low vision run independently, and
+            <a class="inline-link" href="https://blog.google/company-news/outreach-and-initiatives/accessibility/project-guideline-helping-blind-people-run-independently/" target="_blank" rel="noopener">Project Guideline</a>, which helps people with low vision run independently, and
             <a class="inline-link" href="https://developers.google.com/ar/develop/electronic-image-stabilization" target="_blank" rel="noopener">electronic image stabilization</a> for AR.
           </p>
+        </div>
+
+        <div class="impact-grid" aria-label="Selected engineering impact">
+          <article class="impact-card">
+            <span class="impact-kicker">now · Android XR</span>
+            <h3>SceneCore</h3>
+            <p>Building the Jetpack library developers use to place and manipulate 3D content in immersive spaces.</p>
+          </article>
+          <article class="impact-card">
+            <span class="impact-kicker">Google · ARCore</span>
+            <h3>Camera systems at scale</h3>
+            <p>Led camera-pipeline work spanning stabilization, power, compatibility, and performance analytics.</p>
+          </article>
+          <article class="impact-card">
+            <span class="impact-kicker">platform foundations</span>
+            <h3>From boot to pixels</h3>
+            <p>Seventeen-plus years across Android display, camera stacks, embedded Linux, and real-time systems.</p>
+          </article>
         </div>
 
         <blockquote class="pull">
@@ -117,6 +137,7 @@
         </div>
 
         <div class="link-cluster">
+          <a class="link-pill is-work" href="https://developer.android.com/jetpack/androidx/releases/xr-scenecore" target="_blank" rel="noopener">↗ SceneCore docs</a>
           <a class="link-pill is-work" href="https://www.linkedin.com/in/kinjalb" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
@@ -257,8 +278,8 @@
           That's as much of the file as I'm declassifying here. I love a good conversation — spatial
           computing, robot coaching, the most underrated national park, or the detour that changed
           everything. The fastest channel is
-          <a class="inline-link" href="mailto:kinjal.bhavsr@gmail.com">email</a>; a few
-          <a class="inline-link" href="/writing.html">notes and writing</a> are brewing too.
+          <a class="inline-link" href="mailto:kinjal.bhavsr@gmail.com">email</a>; the concise version is in my
+          <a class="inline-link" href="/resume.html">resume</a>.
         </p>
 
         <div class="link-cluster">
@@ -294,7 +315,7 @@
         <button class="game-close" id="game-close" aria-label="Close game">[ esc ]</button>
       </div>
       <div class="game-hud">
-        <div class="game-stat">SCORE: <span id="game-score">0</span></div>
+        <div class="game-stat" role="status" aria-live="polite">SCORE: <span id="game-score">0</span></div>
         <div class="game-stat">TIME: <span id="game-timer">30</span>s</div>
         <div class="game-stat">BEST: <span id="game-best">0</span></div>
       </div>
@@ -310,7 +331,7 @@
     </div>
   </dialog>
 
-  <script src="js/layout.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="js/layout.js?v=20260717b" defer></script>
+  <script src="js/main.js?v=20260717b" defer></script>
 </body>
 </html>

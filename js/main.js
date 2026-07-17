@@ -66,9 +66,12 @@
 
   function spawnGlitch() {
     if (!gameRunning) return;
-    const el = document.createElement('div');
+    const el = document.createElement('button');
+    el.type = 'button';
     el.className = 'glitch-target';
-    el.textContent = GLITCH_EMOJIS[Math.floor(Math.random() * GLITCH_EMOJIS.length)];
+    const emoji = GLITCH_EMOJIS[Math.floor(Math.random() * GLITCH_EMOJIS.length)];
+    el.textContent = emoji;
+    el.setAttribute('aria-label', `Catch glitch ${emoji}`);
 
     const rect = gameArea.getBoundingClientRect();
     const maxX = rect.width - 50;
